@@ -1,5 +1,5 @@
 
-def (filepath):
+def load(filepath):
     cnt = 0
     # open data file
     with open(filepath) as f:
