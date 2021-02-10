@@ -23,4 +23,4 @@ def sentence_similarity(sentence1, sentence2):
     synsets1 = synsets(sentence1)
     synsets2 = synsets(sentence2)
     scores = remove_none(score(s, synsets2) for s in synsets1)
-    return sum(scores) / len(scores)
+    return float(sum(scores)) / len(scores)
